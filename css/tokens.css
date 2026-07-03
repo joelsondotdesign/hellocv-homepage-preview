@@ -1,0 +1,220 @@
+/* ==========================================================================
+   hello.cv design tokens — sourced from the Hello Design System Figma
+   variables. Naming mirrors the Figma token paths (slashes → dashes).
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Saans';
+  src: url('../fonts/Saans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('../fonts/Saans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('../fonts/Saans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('../fonts/Saans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Saans';
+  src: url('../fonts/Saans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Reckless';
+  src: url('../fonts/RecklessStandardM-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Reckless';
+  src: url('../fonts/RecklessStandardM-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Reckless';
+  src: url('../fonts/RecklessStandardM-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Reckless';
+  src: url('../fonts/RecklessStandardM-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ------- primitives: neutral ------- */
+  --base-white: #ffffff;
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-500: #737373;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
+
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-400: #90a1b9;
+
+  /* ------- primitives: signal (brand blue) ------- */
+  --signal-50: #f1f6ff;
+  --signal-100: #c3d8ff;
+  --signal-500: #1062fa;
+  --signal-950: #030e22;
+  --success-500: #11c26b;
+
+  /* ------- typography ------- */
+  --font-family-base: 'Saans', system-ui, -apple-system, sans-serif;
+  --font-family-serif: 'Reckless', Georgia, serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 28px;
+  --font-size-4xl: 32px;
+  --font-size-7xl: 48px;
+  --font-size-8xl: 56px;
+
+  --font-leading-3: 12px;
+  --font-leading-4: 16px;
+  --font-leading-5: 20px;
+  --font-leading-7: 28px;
+  --font-leading-8: 32px;
+  --font-leading-10: 40px;
+  --font-leading-14: 56px;
+
+  --font-tracking-normal: 0;
+  --font-tracking-tight: -0.02em;
+
+  /* ------- spacing ------- */
+  --space-0: 0px;
+  --space-0-5: 2px;
+  --space-1: 4px;
+  --space-1-5: 6px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* ------- radii ------- */
+  --radius-sm: 2px;
+  --radius-base: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+
+  /* ------- component sizes ------- */
+  --component-sm: 32px;
+  --component-lg: 48px;
+  --icon-xs: 12px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+
+  /* ------- elevation ------- */
+  --elevation-base: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --elevation-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --elevation-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --elevation-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --elevation-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 20px 24px -6px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* ------- semantic: light (default) ------- */
+:root,
+[data-theme='light'] {
+  --bg-page: var(--neutral-50);
+  --bg-surface: #ffffff;
+  --bg-surface-raised: #ffffff;
+  --bg-surface-sunken: #f5f5f5;
+  --bg-signal: #074fd5;
+
+  --text-primary: #0f172b;
+  --text-secondary: #62748e;
+  --text-tertiary: #90a1b9;
+  --text-disabled: #d4d4d4;
+  --text-signal: #074fd5;
+  --text-inverse: #ffffff;
+  --text-on-signal: #ffffff;
+
+  --border-subtle: #f3f4f6;
+  --border-default: #e5e7eb;
+  --border-strong: #d1d5dc;
+
+  --icon-default-secondary: #949494;
+
+  --interactive-signal-default: #1062fa;
+  --interactive-signal-disabled: #96bbfe;
+  --interactive-secondary-default: #0f172b;
+}
+
+/* ------- semantic: dark ------- */
+[data-theme='dark'] {
+  --bg-page: #0a0a0a;
+  --bg-surface: #171717;
+  --bg-surface-raised: #262626;
+  --bg-surface-sunken: #0a0a0a;
+  --bg-signal: #1062fa;
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-tertiary: #737373;
+  --text-disabled: #525252;
+  --text-signal: #7ba6ff;
+  --text-inverse: #0f172b;
+  --text-on-signal: #ffffff;
+
+  --border-subtle: #262626;
+  --border-default: #333333;
+  --border-strong: #404040;
+
+  --interactive-signal-default: #1062fa;
+  --interactive-signal-disabled: #2c4a86;
+  --interactive-secondary-default: #fafafa;
+
+  --elevation-base: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --elevation-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --elevation-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --elevation-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}

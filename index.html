@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hello.cv — The personal website that works 24/7 for you</title>
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="hero__dots" aria-hidden="true"></div>
+
+    <header class="header">
+      <div class="header__left">
+        <a class="header__logo" href="#" aria-label="hello.cv home">
+          <img src="assets/logo-hellocv-white.svg" alt="hello.cv" width="94" height="40" />
+        </a>
+        <nav class="header__nav" aria-label="Main">
+          <div class="nav-dropdown">
+            <button class="header__nav-item" type="button" aria-haspopup="true" aria-expanded="false">Product <img src="assets/icon-chevron-down.svg" alt="" width="16" height="16" /></button>
+            <div class="nav-dropdown__panel nav-dropdown__panel--product" role="menu">
+              <div class="nav-dropdown__grid">
+                <a class="nav-feature" href="#" role="menuitem">
+                  <img src="assets/icon-id-card.svg" alt="" width="16" height="16" />
+                  <span class="nav-feature__text">
+                    <span class="nav-feature__title">Your .cv profile</span>
+                    <span class="nav-feature__desc">One address for your professional identity</span>
+                  </span>
+                </a>
+                <a class="nav-feature" href="#" role="menuitem">
+                  <img src="assets/icon-bot.svg" alt="" width="16" height="16" />
+                  <span class="nav-feature__text">
+                    <span class="nav-feature__title">AI Agents</span>
+                    <span class="nav-feature__desc">Scouts that find opportunities while you sleep</span>
+                  </span>
+                </a>
+                <a class="nav-feature" href="#" role="menuitem">
+                  <img src="assets/icon-globe.svg" alt="" width="16" height="16" />
+                  <span class="nav-feature__text">
+                    <span class="nav-feature__title">hello.cv Autofill</span>
+                    <span class="nav-feature__desc">Browser extension — autofill and act anywhere</span>
+                  </span>
+                </a>
+                <a class="nav-feature" href="#" role="menuitem">
+                  <img src="assets/icon-pen-line.svg" alt="" width="16" height="16" />
+                  <span class="nav-feature__text">
+                    <span class="nav-feature__title">Writers</span>
+                    <span class="nav-feature__desc">Resume, cover letter, and CV optimization</span>
+                  </span>
+                </a>
+              </div>
+              <hr class="nav-dropdown__divider nav-dropdown__divider--full" />
+              <div class="nav-dropdown__footer">
+                <a href="#">Hiring? hello.cv for companies</a>
+                <a class="nav-dropdown__all" href="#">See all features <img src="assets/icon-arrow-right-sm-dark.svg" alt="" width="16" height="16" /></a>
+              </div>
+            </div>
+          </div>
+          <a class="header__nav-item" href="#">Templates</a>
+          <a class="header__nav-item" href="#">Why .cv</a>
+          <a class="header__nav-item" href="#">Pricing</a>
+          <div class="nav-dropdown">
+            <button class="header__nav-item" type="button" aria-haspopup="true" aria-expanded="false">Resources <img src="assets/icon-chevron-down.svg" alt="" width="16" height="16" /></button>
+            <div class="nav-dropdown__panel nav-dropdown__panel--resources" role="menu">
+              <a class="nav-link" href="#" role="menuitem">hello.cv MCP</a>
+              <a class="nav-link" href="#" role="menuitem">Blog</a>
+              <a class="nav-link" href="#" role="menuitem">Become an affiliate</a>
+              <a class="nav-link" href="#" role="menuitem">Join our Discord</a>
+              <hr class="nav-dropdown__divider" />
+              <a class="nav-link" href="#" role="menuitem">Contact support</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header__right">
+        <a class="btn btn--outline-inverse btn--sm" href="#">Log in</a>
+        <a class="btn btn--surface btn--sm" href="#">Get your .cv <img src="assets/icon-arrow-right.svg" alt="" width="16" height="16" /></a>
+        <button class="header__burger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <div class="feature-badge">
+        <span class="feature-badge__pill"><span>New</span></span>
+        <span class="feature-badge__label">Profiles 2.0 — AI editing, manual control, templates — all in one panel.</span>
+      </div>
+      <h1 class="hero__title">The personal website that introduces you <br />and works 24/7 for you.</h1>
+      <p class="hero__subtitle">Build a beautiful one-page site on your own .cv domain in 60 seconds. Then hand the talking to your AI agent — it answers visitors&rsquo; questions, shares your work, and sets you up for opportunities.</p>
+
+      <div class="hero__composer">
+        <div class="ai-input" data-node="3014:2181">
+          <div class="ai-input__top">
+            <div class="tab-switch">
+              <button class="tab-switch__tab is-active" type="button">Chat</button>
+              <button class="tab-switch__tab" type="button">
+                <img src="assets/icon-linkedin.svg" alt="" width="16" height="16" /> LinkedIn
+              </button>
+            </div>
+            <p class="ai-input__prompt">I'm a senior executive with 20+ years leading global teams. Build me a refined, minimal site that highlights leadership impact, board roles, and speaking engagements. Tone: confident, understated.</p>
+          </div>
+          <div class="ai-input__actions">
+            <button class="chip-btn" type="button">
+              <img src="assets/icon-upload.svg" alt="" width="24" height="24" /> Upload CV
+            </button>
+            <div class="ai-input__actions-right">
+              <button class="chip-btn" type="button">
+                <img src="assets/icon-voice.svg" alt="" width="24" height="24" /> Voice
+              </button>
+              <button class="ai-input__send" type="button" aria-label="Send">
+                <img src="assets/icon-send.svg" alt="" width="24" height="24" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="hero__starters">
+          <span class="hero__starters-label">Start with</span>
+          <div class="hero__starter-pills">
+            <button class="starter-pill is-active" type="button">Executive</button>
+            <button class="starter-pill" type="button">Footballer</button>
+            <button class="starter-pill" type="button">Gamer/Streamer</button>
+            <button class="starter-pill" type="button">Student</button>
+            <button class="starter-pill" type="button">Kids</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero__footnote">Free .cv domain for your first year (use &ldquo;hellocv&rdquo; at checkout) &nbsp;&middot;&nbsp; No credit card &nbsp;&middot;&nbsp; Live in 2 minutes</p>
+    </div>
+
+    <div class="trusted-by">
+      <p class="trusted-by__label">Trusted by <strong>professionals</strong> <br />at top companies</p>
+      <div class="trusted-by__logos">
+        <div class="trusted-by__track">
+          <img src="assets/logo-google.svg" alt="Google" style="width:94.6px;height:32px" />
+          <img src="assets/logo-jpmorgan.svg" alt="J.P. Morgan" style="width:126.5px;height:25.6px" />
+          <span class="trusted-by__meta" aria-label="Meta">
+            <img src="assets/logo-meta-symbol.svg" alt="" style="width:36.1px;height:24px" />
+            <img src="assets/logo-meta-wordmark.svg" alt="" style="width:75.4px;height:23.2px" />
+          </span>
+          <img src="assets/logo-microsoft.svg" alt="Microsoft" style="width:112.4px;height:24px" />
+          <img src="assets/logo-tesla.svg" alt="Tesla" style="width:40.2px;height:40px" />
+          <img src="assets/logo-nike.svg" alt="Nike" style="width:68.8px;height:24px" />
+          <img src="assets/logo-notion.svg" alt="Notion" style="width:92.2px;height:32px" />
+          <span class="trusted-by__shopify" aria-label="Shopify">
+            <img src="assets/logo-shopify-bag.svg" alt="" style="width:27.5px;height:31.1px" />
+            <img src="assets/logo-shopify-word.svg" alt="" style="width:80.2px;height:25.8px" />
+          </span>
+          <img src="assets/logo-stripe.svg" alt="Stripe" style="width:96.1px;height:40px" />
+          <img src="assets/logo-goldman.svg" alt="Goldman Sachs" style="width:86px;height:36px" />
+          <img src="assets/logo-mckinsey.svg" alt="McKinsey &amp; Company" style="width:171.5px;height:53.3px" />
+          <img src="assets/logo-airbnb.svg" alt="Airbnb" style="width:128.2px;height:40px" />
+          <img src="assets/logo-amazon.svg" alt="Amazon" style="width:119.4px;height:40px" />
+          <img src="assets/logo-apple.svg" alt="Apple" style="width:39.1px;height:48px" />
+          <img src="assets/logo-deloitte.svg" alt="Deloitte" style="width:128.5px;height:24px" />
+        </div>
+        <div class="trusted-by__scrim trusted-by__scrim--left" aria-hidden="true"></div>
+        <div class="trusted-by__scrim trusted-by__scrim--right" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== DESCRIBE IT ============================== -->
+  <section class="describe">
+    <hr class="section-divider" />
+    <div class="section-heading">
+      <p class="overline">Chat to build</p>
+      <h2 class="heading-1">Describe it. Watch it <span class="accent"><strong>build</strong>.</span></h2>
+      <p class="section-heading__sub">Start with your résumé or a single sentence. Your .cv profile and personal site assemble themselves — then keep shaping them just by chatting.</p>
+    </div>
+    <div class="describe__stage">
+      <img class="describe__backdrop" src="assets/mockup-backdrop.png" alt="" aria-hidden="true" />
+      <img class="describe__app" src="assets/img/profile.webp" alt="hello.cv profile editor with AI chat panel" />
+      <div class="describe__scrim" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============================== FEATURE ROWS ============================== -->
+  <section class="feature-rows">
+    <div class="feature-row">
+      <div class="feature-row__copy">
+        <p class="overline">Be discoverable</p>
+        <h2 class="heading-1 heading-1--left">Be the answer when someone <span class="accent"><strong>Googles about&nbsp;you.</strong></span></h2>
+        <p class="feature-row__body">It's not just Google anymore. When a client, recruiter, or collaborator asks ChatGPT, Perplexity, or Google's AI &ldquo;who is [your name]?&rdquo;, your hello.cv page is built to be the source they pull from. You own the story the machines repeat — clean, current, and on a domain that's actually yours.</p>
+        <ul class="checklist">
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Your real domain (you.cv) — not someone else's app</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Built for GEO/AEO + SEO — found by AI engines and humans</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> One link for every email signature, bio, and business card</li>
+        </ul>
+      </div>
+      <div class="feature-row__media">
+        <img src="assets/img/be-discoverable.webp" alt="Search performance card showing your profile as the top answer" width="536" height="561" />
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-row__copy">
+        <p class="overline">AI Agents</p>
+        <h2 class="heading-1 heading-1--left">Your visitors have questions. <span class="accent"><strong>Your agent has answers.</strong></span></h2>
+        <p class="feature-row__body">Every .cv website built with hello.cv comes with an AI agent trained on you — your bio, your work, your links, your story. So visitors don't just scroll past. They ask. &ldquo;Is she taking freelance work?&rdquo; &ldquo;What's his day rate?&rdquo; &ldquo;Can I see that case study?&rdquo; Your agent answers on the spot, in your voice — even while you sleep.</p>
+        <ul class="checklist">
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Answers questions about your work, background, and availability</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Qualifies opportunities and captures the details, so only the good ones reach you</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Shares the right link, file, or work sample on request</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Books time or routes people exactly where you want them</li>
+          <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Pings you (Telegram or email) the moment someone interesting drops by</li>
+        </ul>
+      </div>
+      <div class="feature-row__media">
+        <img src="assets/img/ai-agents.webp" alt="Chat with a hello.cv AI agent answering a visitor's questions" width="536" height="516" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FEATURES BENTO ============================== -->
+  <section class="features">
+    <hr class="section-divider" />
+    <div class="section-heading">
+      <p class="overline">Everything included</p>
+      <h2 class="heading-1">Everything you need to <span class="accent"><strong>own your name online.</strong></span></h2>
+      <p class="section-heading__sub">One profile, one link, one home for who you are — with AI doing the busywork behind the scenes.</p>
+    </div>
+    <div class="bento">
+      <article class="bento__card">
+        <div class="bento__art">
+          <img src="assets/img/chat-to-build.webp" alt="Chat interface suggesting profile edits" width="568" height="436" />
+        </div>
+        <div class="bento__caption">
+          <h3>Chat to build</h3>
+          <p>Describe a change in plain language and watch your site update live — no editor, no code.</p>
+        </div>
+      </article>
+      <article class="bento__card">
+        <div class="bento__art">
+          <img src="assets/img/templates.webp" alt="Professional and Compact starter templates" width="514" height="491" />
+        </div>
+        <div class="bento__caption">
+          <h3>Starter templates</h3>
+          <p>Beautiful, field-tuned templates to start from — then make it unmistakably yours.</p>
+        </div>
+      </article>
+      <article class="bento__card">
+        <div class="bento__art">
+          <img src="assets/found-by-design.png" alt="Google and AI search results surfacing a hello.cv profile" width="568" height="464" />
+        </div>
+        <div class="bento__caption">
+          <h3>Found by design</h3>
+          <p>SEO and AI-discoverability are built in, so you surface wherever people search.</p>
+        </div>
+      </article>
+      <article class="bento__card">
+        <div class="bento__art">
+          <img src="assets/img/your-ai-agents.webp" alt="A profile surrounded by AI agents: job finder, profile builder, resume writer" width="552" height="521" />
+        </div>
+        <div class="bento__caption">
+          <h3>Your AI agents</h3>
+          <p>An agent that answers visitors&rsquo; questions and fills forms out in the world using your profile.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== TESTIMONIALS ============================== -->
+  <section class="testimonials">
+    <hr class="section-divider" />
+    <div class="section-heading">
+      <h2 class="heading-1">Loved by thousands, <span class="accent"><strong>in 190 countries.</strong></span></h2>
+      <p class="section-heading__sub" style="max-width:518px">From first-time grads to seasoned founders, people everywhere are making their name their home online.</p>
+    </div>
+    <div class="testimonials__row">
+      <article class="testimonial">
+        <div class="testimonial__who">
+          <img src="assets/avatar-testimonial.jpg" alt="" width="32" height="32" />
+          <div>
+            <p class="testimonial__name">David Okafor</p>
+            <p class="testimonial__role">Software Engineer</p>
+          </div>
+        </div>
+        <p class="testimonial__quote">I love this concept! I have some colleagues who are job hunting, and I&rsquo;ll definitely share this tool with them. It&rsquo;s a brilliant idea, user-friendly, and reasonably priced. Congrats!</p>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__who">
+          <img src="assets/avatar-testimonial.jpg" alt="" width="32" height="32" />
+          <div>
+            <p class="testimonial__name">David Okafor</p>
+            <p class="testimonial__role">Software Engineer</p>
+          </div>
+        </div>
+        <p class="testimonial__quote">Recruiters message my agent before they message me. Slightly surreal, extremely useful.</p>
+      </article>
+      <article class="testimonial">
+        <div class="testimonial__who">
+          <img src="assets/avatar-testimonial.jpg" alt="" width="32" height="32" />
+          <div>
+            <p class="testimonial__name">Sara Lindqvist</p>
+            <p class="testimonial__role">Independent Consultant</p>
+          </div>
+        </div>
+        <p class="testimonial__quote">My .cv books more intro calls than my old website ever did.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== COMMUNITY ============================== -->
+  <section class="community">
+    <div class="community__head">
+      <div>
+        <h2 class="heading-1">Don't just browse profiles.<br /><span class="accent"><strong>Talk to them.</strong></span></h2>
+        <p class="community__sub">Explore how top professionals design their identity, structure their skills, and showcase their career story into a visually stunning, modern profile.</p>
+      </div>
+      <div class="community__arrows">
+        <button class="round-btn" type="button" aria-label="Previous">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="round-btn" type="button" aria-label="Next">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="community__gallery">
+      <img src="assets/themes-gallery.png" alt="Community profile themes: three example hello.cv sites" />
+      <div class="community__scrim" aria-hidden="true"></div>
+    </div>
+    <div class="community__badge">
+      <img src="assets/made-with-hellocv.png" alt="Made with hello.cv" width="247" height="72" />
+    </div>
+  </section>
+
+  <!-- ============================== PRICING ============================== -->
+  <section class="pricing">
+    <div class="pricing__head">
+      <span class="pricing__tag">Our pricing plan</span>
+      <h2 class="heading-1">Get started for free</h2>
+    </div>
+    <div class="pricing__cards">
+      <article class="plan">
+        <div class="plan__main">
+          <h3 class="plan__name">Starter</h3>
+          <p class="plan__desc">Be amazed at what hello.cv can do.</p>
+          <p class="plan__price">Forever free</p>
+          <a class="plan__cta plan__cta--outline" href="#">Choose plan <img src="assets/icon-arrow-right-dark.svg" alt="" width="24" height="24" /></a>
+        </div>
+        <div class="plan__features">
+          <p class="plan__features-label">Get started with</p>
+          <ul class="checklist checklist--plan">
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> 1 website and template</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Build and preview with AI website builder</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> yourname.cv domain free for 1st year</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Basic GEO/AEO discoverability</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Chat with your CV agent <strong>(Preview only)</strong></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="plan">
+        <div class="plan__main">
+          <h3 class="plan__name">Pro <span class="plan__badge">Most popular</span></h3>
+          <p class="plan__desc">Your own customizable personal website.</p>
+          <p class="plan__price">$2.99/mo</p>
+          <a class="plan__cta plan__cta--signal" href="#">Choose plan <img src="assets/icon-arrow-right-white.svg" alt="" width="24" height="24" /></a>
+        </div>
+        <div class="plan__features">
+          <p class="plan__features-label">Starter on steroids</p>
+          <ul class="checklist checklist--plan">
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Unlimited websites and templates</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Publish any design with AI website builder</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> yourname.cv domain included</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Advanced GEO/AEO discoverability</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Chat with your CV agent <strong>(Preview only)</strong></li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Branded short links (yourname.cv/blog)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="plan">
+        <div class="plan__main">
+          <h3 class="plan__name">Premium</h3>
+          <p class="plan__desc">Your personal website + the full AI toolkit.</p>
+          <p class="plan__price">$9.99/mo</p>
+          <a class="plan__cta plan__cta--secondary" href="#">Choose plan <img src="assets/icon-arrow-right-white.svg" alt="" width="24" height="24" /></a>
+        </div>
+        <div class="plan__features">
+          <p class="plan__features-label">Starter on steroids</p>
+          <ul class="checklist checklist--plan">
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Unlimited websites and templates</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Publish any design with AI website builder</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> yourname.cv domain included</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Advanced GEO/AEO discoverability</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Chat with your CV agent <strong>(Live on your profile)</strong></li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Remove hello.cv branding</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> hello.cv Browser Extension</li>
+            <li><img src="assets/icon-check-circle.svg" alt="" width="22" height="22" /> Resume and cover letter generation</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== CTA ============================== -->
+  <section class="cta">
+    <h2 class="cta__title">Your name won&rsquo;t be available forever</h2>
+    <p class="cta__sub">Build the page in two minutes. Give it an agent that works the room while you don't. Own the first result for your name before someone else does.</p>
+    <div class="cta__composer">
+      <div class="ai-input ai-input--cta">
+        <div class="ai-input__top">
+          <div class="tab-switch">
+            <button class="tab-switch__tab" type="button">Chat</button>
+            <button class="tab-switch__tab is-active" type="button">
+              <img src="assets/icon-linkedin.svg" alt="" width="16" height="16" /> LinkedIn
+            </button>
+          </div>
+          <p class="ai-input__prompt">Tell me who you are or paste your LinkedIn URL</p>
+        </div>
+        <div class="ai-input__actions">
+          <button class="chip-btn" type="button">
+            <img src="assets/icon-upload.svg" alt="" width="24" height="24" /> Upload CV
+          </button>
+          <div class="ai-input__actions-right">
+            <button class="chip-btn" type="button">
+              <img src="assets/icon-voice.svg" alt="" width="24" height="24" /> Voice
+            </button>
+            <button class="ai-input__send" type="button" aria-label="Send">
+              <img src="assets/icon-send.svg" alt="" width="24" height="24" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== FAQS ============================== -->
+  <section class="faqs">
+    <div class="faqs__intro">
+      <h2>Frequently Asked <br />Questions</h2>
+      <p>Got questions? Find answers to common questions and get the clarity you need for a hassle-free experience!</p>
+    </div>
+    <div class="faqs__list">
+      <details class="faq" open>
+        <summary>What is hello.cv, and how does the AI career platform work? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>HelloCV is an AI-powered career platform that helps you create a professional, customizable online profile at your own .cv domain. This is called a digital cv, or e-resume or e-cv. Our tools make it easy to build an impressive resume, generate tailored cover letters, and discover job opportunities — all in one place. Think of it as your personal career OS, powered by AI.</p>
+      </details>
+      <details class="faq">
+        <summary>Do I need any tech skills to use the AI resume and profile builder? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Not at all. Describe what you want in plain language and the builder does the rest — no code, no design tools.</p>
+      </details>
+      <details class="faq">
+        <summary>How does the AI cover letter generator work? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>It uses your profile and the job you're targeting to draft a tailored cover letter you can edit and export.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I customize my AI-generated profile and cover letters? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Yes — everything is editable. Chat to make changes, or fine-tune manually with full control.</p>
+      </details>
+      <details class="faq">
+        <summary>How much does it cost to create a profile with hello.cv? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>You can start for free. Paid plans add unlimited websites, your own domain, and the full AI toolkit.</p>
+      </details>
+      <details class="faq">
+        <summary>Are .cv profiles mobile-friendly and responsive? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Yes — every template is responsive and looks great on phones, tablets, and desktops.</p>
+      </details>
+      <details class="faq">
+        <summary>Will my .cv profile show up on Google and search engines? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Yes. SEO and AI-discoverability (GEO/AEO) are built in, so you surface wherever people search.</p>
+      </details>
+      <details class="faq">
+        <summary>How is hello.cv different from LinkedIn? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>LinkedIn is a network you rent a page on. hello.cv is your own domain, your own design, and an AI agent that speaks for you.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I link my .cv profile to LinkedIn and other platforms? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Absolutely — add it to your LinkedIn, email signature, bios, and business cards. One link for everything.</p>
+      </details>
+      <details class="faq">
+        <summary>How does the job matching feature work? <img src="assets/icon-chevron-down-dark.svg" alt="" width="24" height="24" /></summary>
+        <p>Your profile powers a personalized job feed — the agent surfaces roles that match your skills and preferences.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <img src="assets/logo-hellocv-dark.svg" alt="hello.cv" width="75" height="32" />
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Get your .cv domain</a>
+        <a href="#">Partner with .cv</a>
+      </nav>
+    </div>
+    <div class="footer__brand">
+      <img src="assets/logo-footer-big.svg" alt=".cv" width="266" height="264" />
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <span>hello.cv &copy; 2025</span>
+        <a class="footer__cookies" href="#">Manage cookies</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" aria-label="Social link"><img src="assets/social-1.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Social link"><img src="assets/social-2.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Social link"><img src="assets/social-3.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Social link"><img src="assets/social-4.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Social link"><img src="assets/social-5.svg" alt="" width="24" height="24" /></a>
+        <a href="#" aria-label="Social link"><img src="assets/social-6.svg" alt="" width="24" height="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
