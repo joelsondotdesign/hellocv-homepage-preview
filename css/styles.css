@@ -1913,3 +1913,198 @@ body {
     margin: calc(var(--space-2) * -1) 0;
   }
 }
+
+/* ==========================================================================
+   Polish pass — motion & feel (Emil Kowalski design-engineering standards)
+   Only transform/opacity are animated; hover motion is gated to fine
+   pointers; everything respects prefers-reduced-motion.
+   ========================================================================== */
+
+/* --- Press feedback: every pressable element responds to touch --- */
+.btn,
+.chip-btn,
+.starter-pill,
+.plan__cta,
+.round-btn,
+.ai-input__send,
+.tab-switch__tab,
+.nav-dropdown__all,
+.header__burger,
+.faq summary {
+  transition-property: transform, background-color, border-color, color, opacity;
+  transition-duration: var(--duration-press);
+  transition-timing-function: var(--ease-out-strong);
+}
+
+.btn:active,
+.chip-btn:active,
+.starter-pill:active,
+.plan__cta:active,
+.round-btn:active,
+.tab-switch__tab:active,
+.nav-dropdown__all:active,
+.header__burger:active {
+  transform: scale(0.97);
+}
+
+.ai-input__send:active {
+  transform: scale(0.94);
+}
+
+/* --- Dropdown panels: origin-aware, fast in, faster out --- */
+.nav-dropdown__panel {
+  transform-origin: 24px top; /* scale from the trigger, not center */
+  transform: translateY(-4px) scale(0.97);
+  transition:
+    opacity 150ms var(--ease-out-strong),
+    transform 150ms var(--ease-out-strong),
+    visibility 150ms;
+}
+
+.nav-dropdown:hover .nav-dropdown__panel,
+.nav-dropdown:focus-within .nav-dropdown__panel,
+.nav-dropdown.is-open .nav-dropdown__panel {
+  transform: translateY(0) scale(1);
+  transition-duration: var(--duration-popover);
+}
+
+.nav-feature,
+.nav-link,
+.nav-dropdown__footer a {
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+/* --- FAQ: answer eases in instead of popping --- */
+.faq p {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 220ms var(--ease-out-strong),
+    transform 220ms var(--ease-out-strong);
+  @starting-style {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+/* --- Hero entrance: rare, first-impression moment → gentle stagger --- */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-badge,
+.hero__title,
+.hero__subtitle,
+.hero__composer,
+.hero__footnote {
+  animation: hero-rise 700ms var(--ease-out-strong) backwards;
+}
+
+.feature-badge {
+  animation-delay: 0ms;
+}
+.hero__title {
+  animation-delay: 60ms;
+}
+.hero__subtitle {
+  animation-delay: 120ms;
+}
+.hero__composer {
+  animation-delay: 180ms;
+}
+.hero__footnote {
+  animation-delay: 240ms;
+}
+
+/* --- Scroll reveals (marketing content, seen once per visit) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 600ms var(--ease-out-strong),
+    transform 600ms var(--ease-out-strong);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Hover motion, gated to devices that actually hover --- */
+@media (hover: hover) and (pointer: fine) {
+  .bento__card,
+  .testimonial,
+  .plan {
+    transition: transform 300ms var(--ease-out-strong), box-shadow 300ms var(--ease-out-strong);
+  }
+
+  .bento__card:hover,
+  .testimonial:hover {
+    transform: translateY(-3px);
+  }
+
+  .plan:hover {
+    transform: translateY(-3px);
+  }
+
+  .btn--surface:hover img,
+  .plan__cta:hover img,
+  .nav-dropdown__all:hover img {
+    transform: translateX(2px);
+  }
+
+  .btn--surface img,
+  .plan__cta img,
+  .nav-dropdown__all img {
+    transition: transform var(--duration-press) var(--ease-out-strong);
+  }
+}
+
+/* --- Reduced motion: keep fades, drop movement --- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transform: none;
+    transition: opacity 200ms ease;
+  }
+
+  .feature-badge,
+  .hero__title,
+  .hero__subtitle,
+  .hero__composer,
+  .hero__footnote {
+    animation: none;
+  }
+
+  .trusted-by__track {
+    animation: none;
+  }
+
+  .faq p {
+    transition: opacity 200ms ease;
+    @starting-style {
+      transform: none;
+    }
+  }
+
+  .nav-dropdown__panel {
+    transform: none;
+  }
+
+  .bento__card:hover,
+  .testimonial:hover,
+  .plan:hover {
+    transform: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -87,3 +87,46 @@ if (burger) {
     e.stopPropagation();
   });
 }
+
+// Scroll reveals: marketing sections ease in the first time they enter the
+// viewport. Grid siblings stagger 60ms apart; capped so nothing feels slow.
+const revealTargets = document.querySelectorAll(
+  '.section-heading, .feature-row__copy, .feature-row__media, .bento__card, ' +
+  '.testimonial, .community__head, .describe__stage, .pricing__head, .plan, ' +
+  '.cta__title, .cta__sub, .cta__composer, .faqs__intro, .faqs__list'
+);
+
+if ('IntersectionObserver' in window) {
+  const staggerGroups = ['.bento__card', '.testimonial', '.plan'];
+  revealTargets.forEach((el) => {
+    el.classList.add('reveal');
+    for (const sel of staggerGroups) {
+      if (el.matches(sel)) {
+        const siblings = [...el.parentElement.querySelectorAll(sel)];
+        el.style.setProperty('--reveal-delay', `${Math.min(siblings.indexOf(el), 4) * 60}ms`);
+      }
+    }
+  });
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        // Cards inside a horizontal scroller may never intersect vertically
+        // themselves — reveal the whole group when the scroller shows up.
+        const scroller = entry.target.closest('.testimonials__row');
+        if (scroller) {
+          scroller.querySelectorAll('.reveal').forEach((card) => {
+            card.classList.add('is-visible');
+            io.unobserve(card);
+          });
+        } else {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
+  );
+  revealTargets.forEach((el) => io.observe(el));
+}
