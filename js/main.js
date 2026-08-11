@@ -93,11 +93,12 @@ if (burger) {
 const revealTargets = document.querySelectorAll(
   '.section-heading, .feature-row__copy, .feature-row__media, .bento__card, ' +
   '.testimonial, .community__head, .describe__stage, .pricing__head, .plan, ' +
+  '.chat-app, ' +
   '.cta__title, .cta__sub, .cta__composer, .faqs__intro, .faqs__list'
 );
 
 if ('IntersectionObserver' in window) {
-  const staggerGroups = ['.bento__card', '.testimonial', '.plan'];
+  const staggerGroups = ['.bento__card', '.testimonial', '.plan', '.chat-app'];
   revealTargets.forEach((el) => {
     el.classList.add('reveal');
     for (const sel of staggerGroups) {
