@@ -2416,3 +2416,39 @@ body {
     padding-top: 80px;
   }
 }
+
+/* WhatsApp document-attachment bubble (CV download) */
+.wa-bubble--doc {
+  padding: var(--space-1);
+  padding-bottom: var(--space-4);
+  min-width: 78%;
+}
+
+.wa-doc {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-lg);
+  background: rgba(11, 20, 26, 0.04);
+}
+
+.wa-doc__icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.wa-doc__name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--font-leading-5);
+  color: #111b21;
+}
+
+.wa-doc__size {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-leading-4);
+  color: rgba(17, 27, 33, 0.5);
+}
